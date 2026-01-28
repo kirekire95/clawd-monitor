@@ -1,0 +1,41 @@
+.error-boundary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  padding: 24px;
+}
+
+.error-content {
+  text-align: center;
+  max-width: 400px;
+}
+
+.error-icon {
+  width: 64px;
+  height: 64px;
+  color: var(--color-error);
+  margin: 0 auto 16px;
+}
+
+.error-boundary h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 8px;
+}
+
+.error-message {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+  margin-bottom: 24px;
+  font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
+  background: rgba(239, 68, 68, 0.1);
+  padding: 12px;
+  border-radius: var(--radius-sm);
+}
+
+.error-boundary .btn {
+  width: 100%;
+  justify-content: center;
+}

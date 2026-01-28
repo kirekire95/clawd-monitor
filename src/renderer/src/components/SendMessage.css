@@ -1,0 +1,147 @@
+.send-message {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px 24px;
+  overflow-y: auto;
+}
+
+.send-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #a1a1aa;
+}
+
+.form-select,
+.form-textarea {
+  background: #27272a;
+  border: 1px solid #3f3f46;
+  border-radius: 6px;
+  padding: 10px 12px;
+  color: #e4e4e7;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.form-select:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: #52525b;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-checkboxes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #e4e4e7;
+  cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background: #3b82f6;
+  color: white;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #2563eb;
+}
+
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.btn-secondary {
+  background: #27272a;
+  color: #e4e4e7;
+}
+
+.btn-secondary:hover {
+  background: #3f3f46;
+}
+
+.output-section {
+  background: #18181b;
+  border: 1px solid #27272a;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.output-header {
+  padding: 12px 16px;
+  border-bottom: 1px solid #27272a;
+}
+
+.output-header h3 {
+  font-size: 13px;
+  font-weight: 600;
+  color: #fafafa;
+}
+
+.output-error {
+  padding: 16px;
+  color: #ef4444;
+  font-size: 14px;
+}
+
+.output-content {
+  margin: 0;
+  padding: 16px;
+  background: #0a0a0f;
+  font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
+  font-size: 13px;
+  color: #a1a1aa;
+  white-space: pre-wrap;
+  word-break: break-all;
+  overflow-x: auto;
+}

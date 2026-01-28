@@ -1,0 +1,107 @@
+/* Base skeleton animations */
+@keyframes skeleton-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.03) 25%, rgba(255, 255, 255, 0.08) 50%, rgba(255, 255, 255, 0.03) 75%);
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.5s ease-in-out infinite;
+  border-radius: var(--radius-sm);
+}
+
+/* Stat skeleton */
+.stat-skeleton {
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+}
+
+.skeleton-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 16px;
+}
+
+.skeleton-value {
+  height: 32px;
+  width: 80px;
+  margin-bottom: 4px;
+}
+
+.skeleton-label {
+  height: 14px;
+  width: 120px;
+}
+
+/* List skeleton */
+.skeleton-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skeleton-item {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.skeleton-item-icon {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.skeleton-item-content {
+  flex: 1;
+}
+
+.skeleton-item-title {
+  height: 14px;
+  width: 60%;
+  margin-bottom: 6px;
+  border-radius: 2px;
+}
+
+.skeleton-item-subtitle {
+  height: 12px;
+  width: 40%;
+  border-radius: 2px;
+}
+
+/* Card skeleton */
+.skeleton-card {
+  height: 80px;
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+/* Text skeleton */
+.skeleton-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skeleton-line {
+  height: 14px;
+  width: 100%;
+  border-radius: 2px;
+}
+
+.skeleton-line.short {
+  width: 60%;
+}
